@@ -272,8 +272,9 @@ devMountainEmployees.push(tyler, cahlan, ryan, colt);
 Loop through your devMountainEmployees until you find cahlan, then remove him from the array.*/
 
 for (var i = 0; i < devMountainEmployees.length; i++) {
-  if (devMountainEmployees[i] === cahlan) {
+  if (devMountainEmployees[i].name === "cahlan") {
     devMountainEmployees.splice(i, 1);
+    break;
   }
 };
 
